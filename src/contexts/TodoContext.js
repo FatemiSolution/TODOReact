@@ -1,6 +1,7 @@
-import {createContex, useContext} from 'react'
+import {createContext, createContext, useContext} from 'react'
 
-export const TodoContext = createContex({
+export const TodoContext = createContext({
+
     //in this we create an over all structure of the functionality and functions
     todos:[{
         id:1,
@@ -17,4 +18,4 @@ export const useTODO = ()=>{
     return useContext(TodoContext)
 }
 
-export const TodoProvider = TodoContext.TodoProvider
+export const TodoProvider = TodoContext.Provider
