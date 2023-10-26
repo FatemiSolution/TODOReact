@@ -8,12 +8,13 @@ export const TodoContext = createContext({
         todo:'todo msg',
         completed: false,
     }],
+    // iniating functions to be used 
     addTodo: (todo)=>{},
     deleteTodo: (id)=>{},
     updateTodo:(id,todd)=>{},
     toggleComplete:(id)=>{},
 })
-
+// custom hook 
 export const useTODO = ()=>{
     return useContext(TodoContext)
 }
